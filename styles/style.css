@@ -1,0 +1,233 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    font-size: 15px;
+}
+
+h1 {
+    color: #010C3E;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #444;
+}
+
+h4 {
+    font-size: 24px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 20px;
+    color: #010C3E;
+    text-align: center;
+}
+
+ul ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clear {
+    margin-bottom: 30px;
+}
+
+.red {
+    color: #EE2436;
+    font-weight: bold;
+}
+
+
+/* HEADER */
+
+header {
+    height: 500px;
+}
+
+.main-img-index {
+    width: 100%;
+    height: 500px;
+}
+
+.main-img-index {
+    background: url('/images/main-img.jpg');
+    background-size: cover;
+}
+
+.white-bar {
+    height: 145px 10%;
+    width: 100%;
+    background-color: #ffffffa1;
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+header h1 a {
+    font-family: 'Kaushan Script', cursive;
+    color: #010C3E;
+}
+
+header nav {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #010C3E;
+    text-decoration: bold;
+    /* text-decoration: underline #EE2436;*/
+}
+
+.slogan {
+    padding: 210px 40% 0 20px;
+    font-family: 'Oooh Baby', cursive;
+    font-size: calc(15px + 2.88vw);
+    color: white;
+}
+
+
+/* ARTICLE */
+
+#recipes article {
+    min-width: 80%;
+    min-height: 300px;
+    border-radius: 8px;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0);
+    height: 300px;
+    width: 100%;
+    padding: 10%;
+    border-radius: 8px 8px 8px 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.671);
+}
+
+article h4 {
+    padding-top: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: calc(15px + 0.88vw);
+    color: rgba(255, 255, 255);
+}
+
+#recipe1 {
+    background: url('/images/french-baguette.jpg');
+    background-size: cover;
+}
+
+#recipe2 {
+    background: url('/images/french-crepe.jpg');
+    background-size: cover;
+}
+
+#recipe3 {
+    background: url('/images/french-fries2.jpg');
+    background-size: cover;
+}
+
+#recipe4 {
+    background: url('/images/Boeuf\ Bourguignon.jpg');
+    background-size: cover;
+}
+
+#recipe5 {
+    background: url('/images/french-meringues.jpg');
+    background-size: cover;
+}
+
+#recipe6 {
+    background: url('/images/mulled-wine.jpg');
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+    background-color: hsl(42, 58%, 89%);
+    justify-content: center;
+}
+
+.grid-item {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.grid-item:hover,
+.grid-item:focus,
+.grid-item:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 110px 10%;
+    background-color: hsl(198, 16%, 66%);
+}
+
+footer h1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+footer h1 a {
+    color: #010C3E;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 1% 0 1% 0;
+    color: #ffffffa1;
+}

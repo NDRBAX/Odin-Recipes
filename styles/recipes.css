@@ -1,0 +1,248 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    font-size: 15px;
+}
+
+small {
+    font-size: 15px;
+}
+
+h1 {
+    color: #010C3E;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #444;
+}
+
+h4 {
+    font-size: 24px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 20px;
+    color: #010C3E;
+    text-align: center;
+}
+
+ul ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+.wrapper,
+.recipe-title {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clear {
+    margin-bottom: 30px;
+}
+
+.red {
+    color: #EE2436;
+    font-weight: bold;
+}
+
+
+/* RECIPES */
+
+header {
+    height: 500px;
+}
+
+.main-img1,
+.main-img2,
+.main-img3,
+.main-img4,
+.main-img5,
+.main-img6 {
+    width: 100%;
+    height: 500px;
+}
+
+.main-img1 {
+    background: url('/images/french-baguette.jpg');
+    background-size: cover;
+}
+
+.main-img2 {
+    background: url('/images/french-crepe.jpg');
+    background-size: cover;
+}
+
+.main-img3 {
+    background: url('/images/french-fries2.jpg');
+    background-size: cover;
+}
+
+.main-img4 {
+    background: url('/images/Boeuf\ Bourguignon.jpg');
+    background-size: cover;
+}
+
+.main-img5 {
+    background: url('/images/french-meringues.jpg');
+    background-size: cover;
+}
+
+.main-img6 {
+    background: url('/images/mulled-wine.jpg');
+    background-size: cover;
+}
+
+.white-bar {
+    height: 145px 10%;
+    width: 100%;
+    background-color: #ffffffa1;
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+header h2 {
+    text-align: center;
+    padding: 95px 0 95px 0;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    color: rgba(250, 235, 215, 0.880);
+    -webkit-text-stroke: 3px #010c3e86;
+    font-size: calc(20px + 4.88vw);
+    mix-blend-mode: luminosity;
+}
+
+header h1 a {
+    font-family: 'Kaushan Script', cursive;
+    color: #010C3E;
+}
+
+header nav {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #010C3E;
+    text-decoration: bold;
+    /* text-decoration: underline #EE2436;*/
+}
+
+
+/* PREP */
+
+#prep {
+    margin-bottom: 15px;
+}
+
+#prep ul {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    line-height: 1.5;
+}
+
+#prep ul li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+
+/* INGREDIENTS */
+
+#ingstenut {
+    display: grid;
+    max-width: 75%;
+    grid-template-columns: 50% 30%;
+    gap: 40px;
+    align-items: start;
+    align-content: center;
+    justify-content: center;
+    justify-items: end;
+    margin: 0 auto;
+}
+
+.ingredients ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.ingredients .note ul {
+    font-size: 14px;
+    list-style-type: square;
+    text-align: justify;
+    line-break: 30px;
+}
+
+
+/* DIRECTIONS */
+
+.steps ol {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.steps li::before {
+    counter-increment: step;
+    content: '\AStep ' counter(step) '\A\A';
+    display: grid;
+    white-space: pre;
+    color: #EE2436;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 110px 10%;
+    background-color: hsl(198, 16%, 66%);
+}
+
+footer h1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+footer h1 a {
+    color: #010C3E;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 1% 0 1% 0;
+    color: #ffffffa1;
+}
