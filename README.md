@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="images/logo.png" alt="Project Logo"></a>
+</p>
+
 # Odin Recipes
 
 ## Table of Contents
